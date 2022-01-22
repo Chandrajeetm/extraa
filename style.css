@@ -1,0 +1,216 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS variables */
+
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+     align-items: center;
+    position: absolute;
+    width: 100%;
+
+}
+/*Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+     
+     height: 59px;
+     margin: 3px 6px;
+}
+/* Navigation Bar: List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0px 10px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding:3px 22px ;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section */
+  #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 436px;
+    
+}  
+ #home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    background: url("https://cdn.pixabay.com/photo/2021/07/29/12/43/curry-6507120__340.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    height: 442px;
+    /* ****** */
+    
+
+    
+    
+    
+} 
+/* services section */
+#services-container{
+    width: 100%;
+    /* border: 2px solid black; */
+}
+#services{
+    margin: 32px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: cadetblue;
+}
+#services .box img{
+    height: 30%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-style: oblique;
+}
+/* #services-container{
+    background: url("https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706__340.jpg") no-repeat center center/cover;
+    border: 2px solid red;
+    position: relative;
+    z-index: 100;
+} */
+/* client section */
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 100px;
+}
+.client-item{
+    margin: 0px 75px;
+    padding: 0px 0px;
+}
+.client-item img{
+    height: 200px;
+    width: 200px;
+}
+#client-section{
+    height: 400px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://media.istockphoto.com/photos/healthy-flat-lay-of-sliced-vegetables-composition-picture-id1198220441?b=1&k=20&m=1198220441&s=170667a&w=0&h=LB1Xm2lyy5Nw_3ml9XHKjSxqZMArfsK54EnFyzxIxjA=") no-repeat center center/cover;
+     z-index: -0;
+     opacity: 0.5;
+     height: 350px;
+     filter: invert(0.3);
+}
+/* contact section */
+#contact{
+   height: 400px;  
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("https://media.istockphoto.com/photos/closeup-image-of-male-hands-using-smartphone-with-icon-telephone-picture-id1168945108?b=1&k=20&m=1168945108&s=170667a&w=0&h=vuUT6Qw8h-eRIHQEesB0_fC1V1xgQtPdWp4KyaVXq0M=") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    height: 400px;
+
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /*x*/
+
+}
+#contact-box input,#contact-box textarea{
+      width: 400px;  /*x*/
+      border-radius: 50px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    background: skyblue;
+    width: 100%;
+    height: 50px;
+    
+}
+footer p{
+    padding: 15px 0px;
+}
+/* Utility Class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.4rem;
+    padding: 12px;
+}
+#home p{
+    font-family: cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 10px;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
